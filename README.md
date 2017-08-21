@@ -4,11 +4,13 @@
 3) Открыть файл class.php и ввести название столбца содержащий логин пользователя (Строка 16). Сохраняем.
 
 Пример скрипта:
+```php
 <?php
   include($_SERVER['DOCUMENT_ROOT'] . '/class.php');
   $auth = json_decode(auth('admin', '123456', false, false, false), true);
   print_r($auth);
 ?>
+```
 
 Данные входящие в скрипт:
 admin - Логин пользователя.
